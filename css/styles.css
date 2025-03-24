@@ -333,13 +333,6 @@ section h2::after {
     display: block;
 }
 
-/* JetBrains logo positioning */
-.jetbrains-logo {
-    position: relative;
-    left: -15px; /* Moves the logo to the left */
-    margin: 0 auto;
-}
-
 .skill-card h3 {
     margin-top: auto;
     margin-bottom: 0;
@@ -351,7 +344,41 @@ section h2::after {
 
 .skill-category {
     margin-bottom: 40px;
+    text-align: left;
+}
+
+/* Icon divider styling */
+.icon-divider {
     text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.icon-divider:before,
+.icon-divider:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 35%;
+}
+
+.icon-divider:before {
+    left: 0;
+}
+
+.icon-divider:after {
+    right: 0;
+}
+
+.icon-divider i {
+    font-size: 24px;
+    color: var(--primary-color);
+    background-color: #f9f9f9;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .skill-category h3 {
