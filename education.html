@@ -11,8 +11,8 @@
 <body>
     <header>
         <div class="container">
-            <h1>John Doe</h1>
-            <p>Web Developer & Designer</p>
+            <h1>Marc Timmer Jensen</h1>
+            <p>Master of Science (MSc) in Data Science</p>
             <nav>
                 <ul>
                     <li><a href="index.html#about">About</a></li>
@@ -29,31 +29,143 @@
     <section class="page-header">
         <div class="container">
             <h2>My Education Journey</h2>
-            <p>A detailed look at my academic path from primary school to university</p>
+            <p>A detailed look at my academic path from university to primary school</p>
         </div>
     </section>
 
-    <section id="primary" class="education-section">
+    <section id="university" class="education-section">
         <div class="container">
-            <h2>Primary School</h2>
+            <h2>University</h2>
             <div class="education-card">
-                <div class="education-period">2000 - 2006</div>
+                <div class="education-period">2014 - 2021</div>
                 <div class="education-content">
-                    <h3>Springfield Elementary School</h3>
-                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Springfield, USA</p>
+                    <h3>Tech State University</h3>
+                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Tech City, USA</p>
                     <div class="education-details">
-                        <p>Started my educational journey at Springfield Elementary, where I developed a strong foundation in core subjects and discovered my interest in science and technology.</p>
-                        <h4>Key Achievements:</h4>
+                        <p>Earned my Bachelor's and Master's degrees in Data Science with a focus on Machine Learning and Statistical Analysis.</p>
+                        <h4>Major Coursework:</h4>
                         <ul>
-                            <li>Winner of the school science fair (2005)</li>
-                            <li>Member of the math club</li>
-                            <li>Participated in the regional spelling bee competition</li>
+                            <li>Machine Learning and Statistical Learning</li>
+                            <li>Data Analytics and Visualization</li>
+                            <li>Probability Theory and Statistics</li>
+                            <li>Advanced Mathematical Methods</li>
+                            <li>Database Systems and Big Data</li>
+                            <li>Optimization and Algorithms</li>
                         </ul>
-                        <h4>Favorite Subjects:</h4>
+                        
+                        <h4>Curriculum Overview:</h4>
+                        <div class="course-grid">
+                            <div class="curriculum-toggle">
+                                <button id="toggleCurriculum" class="toggle-btn">
+                                    <span class="toggle-text">Show All Semesters</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <table class="semester-table">
+                                <thead>
+                                    <tr>
+                                        <th>Semester</th>
+                                        <th class="course-col-1">Course 1</th>
+                                        <th class="course-col-2">Course 2</th>
+                                        <th class="course-col-3">Course 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="semester">10. semester</td>
+                                        <td colspan="3" class="thesis"><a href="https://kursuskatalog.au.dk/en/course/123581/Thesis-in-Data-Science" target="_blank">Thesis in Data Science:</a> Machine learning approaches to satellite-based solar irradiance forecasting in Europe <div class="grade-line">Grade: A (12)</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semester">9. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/120246/Data-Visualization" target="_blank">Data Visualization</a> <div class="grade-line">Grade: B (10)</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/121860/Reinforcement-Learning" target="_blank">Reinforcement Learning</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/120312/High-Frequency-Finance-and-Algorithmic-Trading" target="_blank">High Frequency Finance and Algorithmic Trading</a> <div class="grade-line">Grade: A (12)</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semester">8. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/117903/Large-Scale-Optimization" target="_blank">Large Scale Optimization</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/117904/Statistical-Inference-for-High-Dimensional-Data" target="_blank">Statistical Inference for High Dimensional Data</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/117773/Computer-Vision" target="_blank">Computer Vision</a> <div class="grade-line">Grade: A (12)</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="semester">7. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/115396/Advanced-Statistical-Learning" target="_blank">Advanced Statistical Learning</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/115177/Statistiske-modeller" target="_blank">Statistical Models</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/114853/Investering-og-finansiering" target="_blank">Investment and Finance</a> <div class="grade-line">Grade: C (7)</div></td>
+                                    </tr>
+                                    <tr class="hidden-semester">
+                                        <td class="semester">6. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/112438/Philosophy-and-Ethics-of-Data-Science" target="_blank">Philosophy and Ethics of Data Science</a> <div class="grade-line">Grade: Passed*</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/111959/Bachelorprojekt-i-datavidenskab" target="_blank">Bachelor Project in Data Science: Artifact Annotation</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/111732/Modellering-og-loesning-af-optimeringsproblemer" target="_blank">Modelling and Solving Optimisation Problems</a> <div class="grade-line">Grade: A (12)</div></td>
+                                    </tr>
+                                    <tr class="hidden-semester">
+                                        <td class="semester">5. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/108566/Deep-Learning" target="_blank">Deep Learning</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/106757/Statistical-Learning-and-Machine-Learning" target="_blank">Statistical Learning and Machine Learning</a> <div class="grade-line">Grade: B (10)</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/107979/Monte-Carlo-simulering" target="_blank">Monte Carlo Simulation</a> <div class="grade-line">Grade: A (12)</div></td>
+                                    </tr>
+                                    <tr class="hidden-semester">
+                                        <td class="semester">4. semester</td>
+                                        <td class="course-col-1 split-cell">
+                                            <div class="split-course">
+                                                <a href="https://kursuskatalog.au.dk/en/course/103967/Implementering-og-Anvendelser-af-Databaser">Implementation and Applications of Databases</a> 
+                                                <div class="grade-line">Grade: B (10)</div>
+                                            </div>
+                                            <div class="split-divider"></div>
+                                            <div class="split-course">
+                                                <a href="https://kursuskatalog.au.dk/en/course/103964/Databasesystemer">Database Systems</a> 
+                                                <div class="grade-line">Grade: A (12)</div>
+                                            </div>
+                                        </td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/104083/Introduktion-til-programmering-med-videnskabelige-anvendelser" target="_blank">Introduction to Programming with Scientific Applications</a> <div class="grade-line">Grade: A (12)</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/104068/Dataprojekt" target="_blank">Data Project</a> <div class="grade-line">Grade: B (10)</div></td>
+                                    </tr>
+                                    <tr class="hidden-semester">
+                                        <td class="semester">3. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/100564/Kausal-inferens" target="_blank">Causal Inference</a> <div class="grade-line">Grade: B (10)</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/102136/Introduktion-til-datavidenskab" target="_blank">Introduction to Data Science</a> <div class="grade-line">Grade: Passed*</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/100918/Algoritmer-og-datastrukturer" target="_blank">Algorithms and Data Structures</a> <div class="grade-line">Grade: B (10)</div></td>
+                                    </tr>
+                                    <tr class="hidden-semester">
+                                        <td class="semester">2. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/97426/Matematisk-Statistik" target="_blank">Mathematical Statistics</a> <div class="grade-line">Grade: B (10)</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/96571/Matematisk-analyse-2" target="_blank">Mathematical Analysis 2</a> <div class="grade-line">Grade: D (4)</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/96552/Lineaer-algebra" target="_blank">Linear Algebra</a> <div class="grade-line">Grade: A (12)</div></td>
+                                    </tr>
+                                    <tr class="hidden-semester">
+                                        <td class="semester">1. semester</td>
+                                        <td class="course-col-1"><a href="https://kursuskatalog.au.dk/en/course/95311/Introduktion-til-sandsynlighedsteori-og-statistik" target="_blank">Introduction to Probability Theory and Statistics</a> <div class="grade-line">Grade: B (10)</div></td>
+                                        <td class="course-col-2"><a href="https://kursuskatalog.au.dk/en/course/93778/Matematisk-analyse-1" target="_blank">Mathematical Analysis 1</a> <div class="grade-line">Grade: Passed*</div></td>
+                                        <td class="course-col-3"><a href="https://kursuskatalog.au.dk/en/course/94098/Perspektiver-i-matematik" target="_blank">Perspectives in Mathematics</a> <div class="grade-line">Grade: Passed*</div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class=".grade-explanation">*I am not trying to hide a bad grade, some courses are just either "passed" or "not passed".</p>
+
+                        <h4>Notable Projects:</h4>
+                        <div class="projects-toggle">
+                            <button id="toggleProjects" class="toggle-btn">
+                                <span class="toggle-text">Show All Projects</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <ul class="projects-list">
+                            <li>Master's Thesis in Data Science:</a> Machine learning approaches to satellite-based solar irradiance forecasting in Europe". I signed a NDA with Danske Commodities, so I can't share more about the project.  </li>
+                            <li>Reinforcement Learning course project: Implementing different algorithms such as DQN and DQFD. Please view the <a href="https://github.com/marctimjen/ReLe_final" target="_blank">code</a> and <a href="material/Reinforcement_learning_handin.pdf" download>paper</a>.</li>
+                            <li class="hidden-project">High-Frequency Trading project: Developed algorithmic trading strategies for financial markets. Please view the <a href="https://github.com/hftcourse1/HFT_course-/tree/main" target="_blank">code</a> and <a href="material/hft_portfolio.pdf" download>paper</a>.</li>
+                            <li class="hidden-project">Weakly Supervised Anomaly Detection: Implementation of neural network models (RTFM, MGFN, S3R) for detecting anomalies in video data. Please view the <a href="https://github.com/marctimjen/Weakly-supervised-anomaly-detection" target="_blank">code</a> and <a href="material/Weakly_supervised_anomaly_detection.pdf" download>paper</a>.</li>
+                            <li class="hidden-project">Bachelor's Project - Artifact Annotation: Development of deep learning models for EEG artifact annotation and rejection. Please view the <a href="https://github.com/marctimjen/Artefact-Rejection" target="_blank">code</a> and <a href="material/artifact_annotation_thesis.pdf" download>paper</a>.</li>
+                            <li class="hidden-project">Deep Learning Semantic Segmentation: Developed U-Net based models for semantic segmentation of traffic images. Please view the <a href="https://github.com/marctimjen/Deep_final" target="_blank">code</a> and <a href="material/Deep_final.pdf" download>paper</a>.</li>
+                            <li class="hidden-project">Geneference R Package: Developed an R package for simulating and analysing genetic data for genome wide association studies. Please view the <a href="https://github.com/FireGutter/geneference" target="_blank">code</a> and <a href="https://firegutter.github.io/geneference/index.html" target="_blank">documentation</a>.</li>
+                        </ul>
+                        <h4>Achievements:</h4>
                         <ul>
-                            <li>Mathematics</li>
-                            <li>Science</li>
-                            <li>Computer Lab</li>
+                            <li>Top Performer in Statistical Learning and Machine Learning courses</li>
+                            <li>Data Science Hackathon Winner (2019)</li>
+                            <li>Research Assistant in the Data Science Lab</li>
                         </ul>
                     </div>
                 </div>
@@ -94,36 +206,27 @@
         </div>
     </section>
 
-    <section id="university" class="education-section">
+    <section id="primary" class="education-section">
         <div class="container">
-            <h2>University</h2>
+            <h2>Primary School</h2>
             <div class="education-card">
-                <div class="education-period">2014 - 2018</div>
+                <div class="education-period">2000 - 2006</div>
                 <div class="education-content">
-                    <h3>Tech State University</h3>
-                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Tech City, USA</p>
+                    <h3>Springfield Elementary School</h3>
+                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Springfield, USA</p>
                     <div class="education-details">
-                        <p>Earned my Bachelor of Science in Computer Science with a focus on Web Development and Software Engineering.</p>
-                        <h4>Major Coursework:</h4>
+                        <p>Started my educational journey at Springfield Elementary, where I developed a strong foundation in core subjects and discovered my interest in science and technology.</p>
+                        <h4>Key Achievements:</h4>
                         <ul>
-                            <li>Data Structures and Algorithms</li>
-                            <li>Web Development (Front-end & Back-end)</li>
-                            <li>Database Systems</li>
-                            <li>Software Engineering Principles</li>
-                            <li>Human-Computer Interaction</li>
-                            <li>Mobile Application Development</li>
+                            <li>Winner of the school science fair (2005)</li>
+                            <li>Member of the math club</li>
+                            <li>Participated in the regional spelling bee competition</li>
                         </ul>
-                        <h4>Notable Projects:</h4>
+                        <h4>Favorite Subjects:</h4>
                         <ul>
-                            <li>Senior Thesis: "Improving User Experience in Progressive Web Applications"</li>
-                            <li>Developed a full-stack e-commerce platform as part of a team project</li>
-                            <li>Created a mobile app for campus navigation that was adopted by the university</li>
-                        </ul>
-                        <h4>Achievements:</h4>
-                        <ul>
-                            <li>Dean's List (6 semesters)</li>
-                            <li>Hackathon Winner - Best Web Application (2017)</li>
-                            <li>Teaching Assistant for Introduction to Web Development</li>
+                            <li>Mathematics</li>
+                            <li>Science</li>
+                            <li>Computer Lab</li>
                         </ul>
                     </div>
                 </div>
@@ -144,10 +247,47 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 John Doe. All rights reserved.</p>
+            <p>&copy; 2025 Marc Timmer Jensen. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Curriculum toggle
+            const toggleBtn = document.getElementById('toggleCurriculum');
+            const semesterTable = document.querySelector('.semester-table');
+            
+            toggleBtn.addEventListener('click', function() {
+                semesterTable.classList.toggle('show-all-semesters');
+                toggleBtn.classList.toggle('expanded');
+                
+                const toggleText = toggleBtn.querySelector('.toggle-text');
+                if (semesterTable.classList.contains('show-all-semesters')) {
+                    toggleText.textContent = 'Hide Earlier Semesters';
+                } else {
+                    toggleText.textContent = 'Show All Semesters';
+                }
+            });
+            
+            // Projects toggle
+            const toggleProjectsBtn = document.getElementById('toggleProjects');
+            const projectsList = document.querySelector('.projects-list');
+            
+            if (toggleProjectsBtn && projectsList) {
+                toggleProjectsBtn.addEventListener('click', function() {
+                    projectsList.classList.toggle('show-all-projects');
+                    toggleProjectsBtn.classList.toggle('expanded');
+                    
+                    const toggleText = toggleProjectsBtn.querySelector('.toggle-text');
+                    if (projectsList.classList.contains('show-all-projects')) {
+                        toggleText.textContent = 'Hide Additional Projects';
+                    } else {
+                        toggleText.textContent = 'Show All Projects';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html> 

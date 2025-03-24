@@ -5,16 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
             const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            const headerHeight = document.querySelector('header').offsetHeight;
             
-            window.scrollTo({
-                top: targetElement.offsetTop - headerHeight,
-                behavior: 'smooth'
-            });
+            // Only apply smooth scrolling to links that point to sections on the same page
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                
+                const targetElement = document.querySelector(targetId);
+                const headerHeight = document.querySelector('header').offsetHeight;
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - headerHeight,
+                    behavior: 'smooth'
+                });
+            }
+            // Links to other pages will work normally
         });
     });
     
