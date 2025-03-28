@@ -83,7 +83,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background: linear-gradient(to right, #4a6cf7, #6c8dff);
@@ -138,6 +138,18 @@ header nav ul li a:hover {
 .btn-outline:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+.btn-dark-hover {
+    background-color: var(--primary-color); /* Initial dark color */
+    color: #fff; /* Text color */
+    border: 1px solid var(--primary-color); /* Border matching background */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-dark-hover:hover {
+    background-color: #333; /* Darker color on hover */
+    color: #fff; /* Keep text white */
 }
 
 /* General Section Styling */
@@ -581,4 +593,4 @@ footer {
     .project-links {
         flex-direction: column;
     }
-} 
+}
