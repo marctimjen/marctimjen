@@ -1,0 +1,153 @@
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 120px 0 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/header-bg.jpg') center/cover;
+    opacity: 0.1;
+}
+
+.page-header h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Jobs Section */
+.jobs-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-card:first-child {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #4a6cf7 0%, #6c8dff 100%);
+    color: #fff;
+}
+
+.job-card:first-child .job-header h3,
+.job-card:first-child .company,
+.job-card:first-child .period,
+.job-card:first-child .location,
+.job-card:first-child .job-description,
+.job-card:first-child .responsibilities li {
+    color: #fff;
+}
+
+.job-card:first-child .location i {
+    color: #fff;
+}
+
+.job-card:first-child .responsibilities li::before {
+    color: #fff;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+    margin-bottom: 1rem;
+}
+
+.job-header h3 {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.job-details {
+    margin-bottom: 1.5rem;
+}
+
+.period {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.location i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.job-description {
+    color: var(--secondary-color);
+}
+
+.job-description p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.responsibilities {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.responsibilities li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.responsibilities li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1.5rem;
+}
+
+@media (max-width: 768px) {
+    .job-card {
+        padding: 1.5rem;
+    }
+} 

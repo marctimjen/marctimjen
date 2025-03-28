@@ -1,0 +1,7 @@
+# Ignore material directory
+material/ 
+*.pdf
+*.docx
+*.doc
+*.ppt
+*.pptx

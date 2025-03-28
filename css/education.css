@@ -252,7 +252,7 @@ header nav ul li a.active {
 }
 
 .semester-table th {
-    background-color: #1e88e5;
+    background-color: #3a5bd9;
     color: white;
     font-weight: 600;
 }
@@ -523,4 +523,154 @@ header nav ul li a.active {
     font-style: italic;
     margin: 15px 0 25px;
     text-align: right;
-} 
+}
+
+.memories-content {
+    max-width: 100%;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 1000px; /* Increased from 500px to accommodate larger images */
+    overflow: hidden;
+    display: block; /* Ensure it's visible by default */
+}
+
+.memories-content.hidden {
+    opacity: 0 !important; /* Force opacity to 0 */
+    max-height: 0 !important; /* Force max-height to 0 */
+    margin: 0 !important; /* Force margin to 0 */
+    pointer-events: none !important; /* Prevent interaction */
+    display: none !important; /* Force hiding */
+}
+
+.memory-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.memories-content p {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.recommendations-content {
+    max-width: 100%;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 2500px; /* Adjusted to fit content */
+    overflow: hidden;
+    display: block;
+    text-align: center; /* Center-align text and images */
+}
+
+.recommendations-content.hidden {
+    opacity: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    pointer-events: none !important;
+    display: none !important;
+}
+
+.recommendation-image {
+    max-width: 90%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 1rem auto; /* Center the image */
+    display: block; /* Ensure the image is block-level */
+}
+
+.recommendations-content p {
+    margin: 1rem 0 0.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-align: center; /* Center-align text */
+}
+
+.translation {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+.grades-table th, .grades-table td {
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0;
+}
+
+.grades-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.grades-table td {
+    text-align: center;
+}
+
+.grades-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Dropdown Menu Content */
+.dm-content {
+    max-width: 100%;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 2000px; /* Adjusted to fit content */
+    overflow: hidden;
+    display: block;
+    text-align: center; /* Center-align text and images */
+}
+
+.dm-content.hidden {
+    opacity: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    pointer-events: none !important;
+    display: none !important;
+}
+
+.dm-image {
+    max-width: 90%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 1rem auto; /* Center the image */
+    display: block; /* Ensure the image is block-level */
+}
+
+.dm-certificate-link {
+    display: inline-block;
+    margin: 1rem 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dotted var(--primary-color);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.dm-certificate-link:hover {
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+}

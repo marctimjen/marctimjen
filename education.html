@@ -11,16 +11,17 @@
 <body>
     <header>
         <div class="container">
-            <h1>Marc Timmer Jensen</h1>
+            <h1>Marc Jensen</h1>
             <p>Master of Science (MSc) in Data Science</p>
             <nav>
                 <ul>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#timeline">Timeline</a></li>
-                    <li><a href="education.html" class="active">Education</a></li>
                     <li><a href="index.html#skills">Skills</a></li>
                     <li><a href="index.html#projects">Projects</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,21 +38,12 @@
         <div class="container">
             <h2>University</h2>
             <div class="education-card">
-                <div class="education-period">2014 - 2021</div>
+                <div class="education-period">2019 - 2024</div>
                 <div class="education-content">
-                    <h3>Tech State University</h3>
-                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Tech City, USA</p>
+                    <h3>Aarhus University</h3>
+                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Aarhus, Denmark</p>
                     <div class="education-details">
-                        <p>Earned my Bachelor's and Master's degrees in Data Science with a focus on Machine Learning and Statistical Analysis.</p>
-                        <h4>Major Coursework:</h4>
-                        <ul>
-                            <li>Machine Learning and Statistical Learning</li>
-                            <li>Data Analytics and Visualization</li>
-                            <li>Probability Theory and Statistics</li>
-                            <li>Advanced Mathematical Methods</li>
-                            <li>Database Systems and Big Data</li>
-                            <li>Optimization and Algorithms</li>
-                        </ul>
+                        <p>Earned my Bachelor's and Master's degrees in Data Science with a focus on Machine/Deep Learning and Statistics.</p>
                         
                         <h4>Curriculum Overview:</h4>
                         <div class="course-grid">
@@ -163,10 +155,22 @@
                         </ul>
                         <h4>Achievements:</h4>
                         <ul>
-                            <li>Top Performer in Statistical Learning and Machine Learning courses</li>
-                            <li>Data Science Hackathon Winner (2019)</li>
-                            <li>Research Assistant in the Data Science Lab</li>
+                            <li>Participated in two hackathons at Aarhus University.</li>
+                            <li>Participated in DM in AI for 2022 & 2023.</li>
                         </ul>
+                        <div class="dm-toggle">
+                            <button id="toggleDM" class="toggle-btn">
+                                <span class="toggle-text">Show DM in AI contents</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="dm-content hidden">
+                            <p style="text-align: left;">The leader-board of DM in AI 2023. My team "Kernel bois" achieved a fifth place:</p>
+                            <img src="material/pictures/DM_2023.png" alt="DM in AI 2023" class="dm-image">
+                            <br>
+                            <p style="text-align: left;">Certificate for best solution to the "Sentiment Analysis" task for DM in AI 2022:</p>
+                            <a href="material/certificates/DM_2022.pdf" target="_blank" class="dm-certificate-link">View Certificate (PDF)</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,29 +181,98 @@
         <div class="container">
             <h2>High School</h2>
             <div class="education-card">
-                <div class="education-period">2006 - 2010</div>
+                <div class="education-period">2016 - 2019</div>
                 <div class="education-content">
-                    <h3>Riverside High School</h3>
-                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Riverside, USA</p>
+                    <h3>Ikast-Brande Gymnasium (STX)</h3>
+                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Ikast, Denmark</p>
                     <div class="education-details">
-                        <p>At Riverside High, I expanded my horizons with advanced coursework and extracurricular activities that helped shape my future career path.</p>
+                        <p>
+                            I studied in the "Super Science" class, where I took Mathematics, Physics, and Chemistry at the highest level. 
+                            My time at Ikast-Brande Gymnasium was both educational and enjoyable. I learned a lot academically and personally, 
+                            and I made some truly great friends along the way. These were some of the best years of my life, and I would gladly 
+                            relive them if I could.
+                        </p>
                         <h4>Curriculum Focus:</h4>
-                        <ul>
-                            <li>Advanced Placement Computer Science</li>
-                            <li>Advanced Mathematics (Calculus)</li>
-                            <li>Physics and Chemistry</li>
-                        </ul>
+                        <table class="grades-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Written Exam Grade</th>
+                                    <th>Oral Exam Grade</th>
+                                    <th>Expected Written Grade</th>
+                                    <th>Expected Oral Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chemistry</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>B (10)</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                    <td>A (12)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <h4>Extracurricular Activities:</h4>
                         <ul>
-                            <li>President of the Computer Club (2009-2010)</li>
-                            <li>Member of the Robotics Team</li>
-                            <li>School Newspaper - Technology Columnist</li>
+                            <li>Attended study practice at Aarhus University.</li>
                         </ul>
                         <h4>Key Projects:</h4>
                         <ul>
-                            <li>Developed a basic inventory management system for the school library</li>
-                            <li>Created a custom website for the school's science department</li>
+                            <li>
+                                Aerodynamic Project (SRP): Wrote aboute aerodynamics in my SRP thesis of high school. 
+                                <a href="material/SRP_Aerodynamik.pdf" target="_blank">View Project (PDF)</a>
+                                <div class="grade-line">Grade: A (12)</div>
+                            </li>
                         </ul>
+
+                        <h4>Teacher Recommendations:</h4>
+                        <div class="recommendations-toggle">
+                            <button id="toggleRecommendations" class="toggle-btn">
+                                <span class="toggle-text">Show Recommendations</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="recommendations-content hidden">
+                            <p>Physics Teacher Recommendation - Leo:</p>
+                            <img src="material/recommendations/rec_leo.png" alt="Physics Teacher Recommendation" class="recommendation-image">
+                            <p class="translation" style="text-align: left;">Translation:</p>
+                            <p style="text-align: left;">Recommendation to Marc Timmer Jensen </p>
+                            <p style="text-align: left;">I have had the great pleasure of being Marc's physics teacher throughout his three years at Ikast-Brande Gymnasium, concluding with physics at A-level. </p>
+                            <p style="text-align: left;">Throughout all these years, Marc has been an extraordinarily talented, diligent, and persistent student, both orally and in writing—without ever being overly competitive. </p>
+                            <p style="text-align: left;">His hard work was particularly evident in his written assignments and physics reports, where his tasks could span 14-15 pages, while the rest of the class typically managed with half that length. Marc was determined to delve deeply into every task and was always eager to find the “examiners’ treats” (something beyond the expectations of the assignment). </p>
+                            <p style="text-align: left;">Marc's physics reports were also exceptionally thorough and comprehensive, and it was always a great pleasure to read the 20-25 pages, which is why his reports were the ones I started grading first. </p>
+                            <p style="text-align: left;">Not only in physics and other scientific subjects was Marc extraordinarily talented. This is also reflected in his exam average, which reached 11.2 without bonus points. </p>
+                            <p style="text-align: left;">Marc's consistent attendance is evident from his very low absenteeism, which in his third year was due to just one sick day and his participation in the study practice at Aarhus University! </p>
+                            <p style="text-align: left;">So I can confidently give my highest recommendations to Marc Timmer Jensen!</p>
+                            <p style="text-align: left;">Best regards </p>
+                            <p style="text-align: left;">Leo Sørup</p>
+                            <p style="text-align: left;">Physics teacher at Ikast-Brande gymnasium for more than 39 years.</p>
+                            <br>
+                            <p>Mathematics Teacher Recommendation - Casper:</p>
+                            <img src="material/recommendations/rec_CS.png" alt="Math Teacher Recommendation" class="recommendation-image">
+                            <p class="translation" style="text-align: left;">Translation:</p>
+                            <p style="text-align: left;">Marc Timmer Jensen was my student in mathematics for 3 years at Ikast-Brande gymnasium from August 2016 to July 2019. He was a skilled and dedicated student, that was present always. He has though all 3 years worked determined to excell in mathematics. He was an intelligent and hard working student, that could work individually and in a team. Socially (in the classroom) Marc was liked and he was seen as a good classmate. Marc always offered his help to others if they needed it.</p>
+                            <p style="text-align: left;">I hereby give Marc Timmer Jensen my best reccomendation.</p>
+                            <p style="text-align: left;">Casper Skouborg</p>
+                            <p style="text-align: left;">Lector at Ikast-Brande gymnasium</p>
+                            <p style="text-align: left;">Subject Secretary in Mathematics</p>
+                            <p style="text-align: left;">Casper Valentin Skouborg</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,23 +283,27 @@
         <div class="container">
             <h2>Primary School</h2>
             <div class="education-card">
-                <div class="education-period">2000 - 2006</div>
+                <div class="education-period">2006 - 2016</div>
                 <div class="education-content">
-                    <h3>Springfield Elementary School</h3>
-                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Springfield, USA</p>
+                    <h3>Sunds-Ilskov Skole</h3>
+                    <p class="education-location"><i class="fas fa-map-marker-alt"></i> Sunds, Denmark</p>
                     <div class="education-details">
-                        <p>Started my educational journey at Springfield Elementary, where I developed a strong foundation in core subjects and discovered my interest in science and technology.</p>
-                        <h4>Key Achievements:</h4>
-                        <ul>
-                            <li>Winner of the school science fair (2005)</li>
-                            <li>Member of the math club</li>
-                            <li>Participated in the regional spelling bee competition</li>
-                        </ul>
+                        <p>Started my educational journey at Sunds school, where I developed a strong foundation in different subjects and discovered my interest in science (especially chemistry) and technology.</p>
+                        <h4>School Memories:</h4>
+                        <div class="memories-toggle">
+                            <button id="toggleMemories" class="toggle-btn">
+                                <span class="toggle-text">Show School Photo</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="memories-content hidden">
+                            <img src="material/pictures/pres.png" alt="School Presentation" class="memory-image">
+                        </div>
+
                         <h4>Favorite Subjects:</h4>
                         <ul>
                             <li>Mathematics</li>
-                            <li>Science</li>
-                            <li>Computer Lab</li>
+                            <li>Chemistry / Physics</li>
                         </ul>
                     </div>
                 </div>
@@ -282,12 +359,71 @@
                     const toggleText = toggleProjectsBtn.querySelector('.toggle-text');
                     if (projectsList.classList.contains('show-all-projects')) {
                         toggleText.textContent = 'Hide Additional Projects';
-                    } else {
+                    } else {     
                         toggleText.textContent = 'Show All Projects';
+                    }
+                });
+            }
+
+            // Memories toggle
+            const toggleMemoriesBtn = document.getElementById('toggleMemories');
+            const memoriesContent = document.querySelector('.memories-content');
+            
+            if (toggleMemoriesBtn && memoriesContent) {
+                toggleMemoriesBtn.addEventListener('click', function() {
+                    // Toggle the 'hidden' class
+                    memoriesContent.classList.toggle('hidden');
+                    
+                    // Debugging: Log the current state
+                    console.log("Memories content class list:", memoriesContent.classList);
+                    console.log("Computed style display:", window.getComputedStyle(memoriesContent).display);
+
+                    // Update button text
+                    const toggleText = toggleMemoriesBtn.querySelector('.toggle-text');
+                    if (!memoriesContent.classList.contains('hidden')) {
+                        toggleText.textContent = 'Hide School Photo';
+                    } else {
+                        toggleText.textContent = 'Show School Photo';
+                    }
+                });
+            }
+
+            // Recommendations toggle
+            const toggleRecommendationsBtn = document.getElementById('toggleRecommendations');
+            const recommendationsContent = document.querySelector('.recommendations-content');
+            
+            if (toggleRecommendationsBtn && recommendationsContent) {
+                toggleRecommendationsBtn.addEventListener('click', function() {
+                    recommendationsContent.classList.toggle('hidden'); // Toggle 'hidden' class
+                    toggleRecommendationsBtn.classList.toggle('expanded');
+                    
+                    const toggleText = toggleRecommendationsBtn.querySelector('.toggle-text');
+                    if (!recommendationsContent.classList.contains('hidden')) {
+                        toggleText.textContent = 'Hide Recommendations';
+                    } else {
+                        toggleText.textContent = 'Show Recommendations';
+                    }
+                });
+            }
+
+            // DM toggle
+            const toggleDMBtn = document.getElementById('toggleDM');
+            const dmContent = document.querySelector('.dm-content');
+            
+            if (toggleDMBtn && dmContent) {
+                toggleDMBtn.addEventListener('click', function() {
+                    dmContent.classList.toggle('hidden'); // Toggle 'hidden' class
+                    toggleDMBtn.classList.toggle('expanded');
+                    
+                    const toggleText = toggleDMBtn.querySelector('.toggle-text');
+                    if (!dmContent.classList.contains('hidden')) {
+                        toggleText.textContent = 'Hide DM in AI contents';
+                    } else {
+                        toggleText.textContent = 'Show DM in AI contents';
                     }
                 });
             }
         });
     </script>
 </body>
-</html> 
+</html>
